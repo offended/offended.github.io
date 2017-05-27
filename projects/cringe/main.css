@@ -1,0 +1,26 @@
+body {
+    font-family: 'Ruslan Display', cursive;
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: -2;
+    width: 50%;
+    height: 50%;
+    background:url("disgusting2.gif");
+}
+body:hover {
+    font-weight: 900;
+    font-size: 22px;
+    color: #00ffff;
+    font-style: italic;
+    transition: 0.5s;
+}
+a {
+    display: block;
+    width: 83%;
+    height: 61%;
+}
+.nasty {
+    background:black;
+    
+}

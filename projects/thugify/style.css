@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    margin-left: 10%;
+    padding: 0;
+    border: 0;
+    background-color: #212121;
+    color: #ffffff;
+    text-align: center;
+}
+#text-input {
+    border: 0;
+    border-radius: 5000000px;
+    background-color: #3d3d3d;
+    color: #f45342;
+    padding-left: 10px;
+    font-size: 20px;
+    
+}
+.thuggin {
+    background-color: #404040;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

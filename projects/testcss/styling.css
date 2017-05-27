@@ -1,0 +1,261 @@
+body {
+    background-color: #dedede;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+
+/*--------------------Top bar.-----------------------------*/
+
+
+.topbar { /*self-explanatory.*/
+    padding-top: 10px 0px 10px 0px;
+    background-color: #a1a1a1;
+    box-shadow: 0 2px 3px -1px #b0b0b0;
+    height: 35px;
+    width: calc(100% - 20px);
+    border: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.padded { /*contains comments and ask area.*/
+    padding: 0 10px 0 10px;
+}
+.logo { /*this is just for the MAKE UP MY MIND text.*/
+    float: left;
+    padding: 5px 20px 0 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 13px;
+    background-color: #ffffff;
+    height: 30px;
+}
+.menubutton, .lastmenubutton {
+    margin-top: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0;
+    height:35px;
+    float: left;
+    /*color: #ffffff;*/
+   /* background-color: #b1b1b1; */ /*change this color later*/
+    background-color: #ffffff;
+    color: transparent;
+    text-shadow: 0px 2px 2px rgba(80,80,80,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    border-radius: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    transition: 0.2s;
+}
+.menubutton:hover, .lastmenubutton:hover {
+    box-shadow: inset 0 4px 6px #404040;
+    text-shadow: 0px 1px 1px rgba(80,80,80,0.4);
+    background-color: #ffffff;
+}
+.menubutton { /*top bar menu buttons.*/
+    border-right: 1px solid #0dffb5;
+}
+.lastmenubutton { /*last top bar button only.*/
+    border-right: 0;
+}
+ /*background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;*/
+
+/*---------------------Ask area.------------------------------*/
+
+
+.askarea { /*entire box for question, not including options...?*/
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px -1px #a0a0a0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px; /*will change later when top bar is finalized.*/
+}
+h1 {
+    color: #0dffb5;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: -0.75px;
+    margin: 0px;
+}
+.qdesc { /*question description*/
+    color: #3b3b3b;
+    font-size: 14px;
+    line-height: 22px;
+    word-wrap: break-word;
+    letter-spacing: -0.25px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+}
+.descbottom { /*container for timer, timestamp, and comment counter.*/
+    line-height: 20px;
+    /*margin-bottom: 15px;*/
+}
+.timer { /*2W 3D 12:33:01*/
+    color: #ff2e01;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    float: left;
+    margin-right: 10px;
+    width: 28%;
+}
+.commentcounter { /*420 COMMENTS*/
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 22px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #c1c1c1;
+    float: left;
+    letter-spacing: 0px;
+    width: 40%;
+}
+.qtimestamp, .ctimestamp { /*question and comment timestamp*/
+    color: #c1c1c1;
+    float: right;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 0.25px;
+    width: 150px;
+    text-align: right;
+}
+.qtimestamp {
+    font-size: 14px;
+}
+
+
+/*---------------------Option bar.----------------------------*/
+
+.floatleft {
+    width: 50%;
+    float: left;
+    clear: left;
+}
+.floatright {
+    width: 50%;
+    float: right;
+    clear: right;
+}
+.option1, .option2 {
+    width: calc(100% + 7px);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 5px;
+    background-color: #606060;
+    color: #ffffff;
+    border-top: 0;
+    border-bottom: 0;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+.option1 { /*left option. OPTION 1 PH*/
+    float:left;
+    clear: left;
+    margin-left: -10px;
+}
+.option2 { /*right option. OPTION 2 PH*/
+    float:right;
+    clear:right;
+    margin-right: -10px;
+}
+.op1bar, .op2bar {
+    height: 8px; /*placeholder.*/
+    width: calc(100% + 7px);
+}
+.op1bar { /*option 1 color bar.*/
+    float: left;
+    background-color: #0dffb5;
+    margin-left: -10px;
+}
+.op2bar { /*option 2 color bar.*/
+    float: right;
+    background-color: #ff2e01;
+    margin-right: -10px;
+}
+.clear { /*keeps option bars in container.*/
+    clear:both;
+    line-height: 0;
+}
+
+
+/*----------------------Comment section.----------------------------*/
+
+
+.h2text { /*used for COMMENTS text.*/
+    margin-bottom: -5px;
+    margin-top: 15px;
+    letter-spacing: -0.5px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+.op1comments, .op2comments {
+    padding: 5px;
+    color: #3b3b3b;
+    width: calc(50% - 10px);
+}
+.op1comments { /*option 1 comment section.*/
+    float: left;
+}
+.op2comments { /*option 2 comment.*/
+    float: right;
+}
+.comment1, .comment2 { /*this includes all comments boxes.*/
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background-color: #ffffff;
+    word-wrap: break-word;
+    box-shadow: 0 2px 3px -1px #a0a0a0;
+    padding: 3px 8px 3px 8px;
+}
+.comment1 { /*for comments for option 1.*/
+    border-left: 20px solid #0dffb5;
+}
+.comment2 { /*for comments for option 2.*/
+    border-left: 20px solid #ff2e01;
+}
+.ctimestamp {
+    font-size: 13px;
+    clear:both;
+}
+
+
+/*---------------------------Footer.--------------------------*/
+
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    padding: 10px;
+    clear: both;
+    background-color: #a1a1a1;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    text-align: center;
+}
